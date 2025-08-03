@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Arduino Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+    :root {
+      --primary-color: #0077cc;
+      --secondary-color: #f9f9f9;
+      --accent-color: #ffcc00;
+      --text-color: #333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: var(--secondary-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 15px 10px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-start; /* Mobil uchun */
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      padding: 10px;
+      scroll-padding-left: 10px;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    nav a {
+      margin: 0 12px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      white-space: nowrap;
+      flex: 0 0 auto;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Kompyuter uchun navigatsiyani markazlashtirish */
+    @media (min-width: 768px) {
+      nav {
+        justify-content: center;
+      }
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(to right, #0077cc, #00aaff);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+    }
+
+    .cta {
+      margin-top: 20px;
+      display: inline-block;
+      background-color: var(--accent-color);
+      color: black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 30px 15px;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .gif {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9em;
+      margin-top: 30px;
+    }
+
+    nav::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    nav::-webkit-scrollbar-thumb {
+      background-color: #ccc;
+      border-radius: 4px;
+    }
+
+    nav::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    </style>
+</head>
+<body>
+<header>
+    <h2>Arduino Academy</h2>
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/tutorials.html">Tutorials</a>
+        <a href="/Projects.html">Projects</a>
+        <a href="/Resources.html">Resources</a>
+        <a href="/error.html">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>DIY Arduino Projects</h1>
+
+</div>
+
+<section>
+    <div class="cards">
+        <div class="card">
+            <img src="https://content.instructables.com/FUX/O1RW/GICYBAOS/FUXO1RWGICYBAOS.jpg?auto=webp&frame=1&width=2100"
+                 alt="Tutorial GIF" class="gif">
+            <h3>LED Cube Matrix</h3>
+            <p>Create stunning 3D animations with an 8x8x8 LED cube and learn about multiplexing and timing control.</p>
+        </div>
+        <div class="card">
+            <img src="https://techatronic.com/wp-content/uploads/2020/12/IMG_20210107_090956_578-1024x768.jpg"
+                 alt="Tutorial GIF" class="gif">
+            <h3>Smart Plant Watering System</h3>
+            <p>Use moisture sensors and a relay module to automatically keep your plants hydrated.</p>
+        </div>
+        <div class="card">
+            <img src="https://i0.wp.com/srituhobby.com/wp-content/uploads/2021/06/170.jpg?fit=1280%2C720&ssl=1"
+                 alt="Tutorial GIF" class="gif">
+            <h3>IoT Weather Station</h3>
+            <p>Collect temperature, humidity and barometric data and send it to the cloud using WiFi-enabled boards.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Arduino Academy | Made with passion in Tashkent 💡</p>
+</footer>
+</body>
+</html>
