@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Arduino Academy</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
-    <style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arduino Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
     :root {
       --primary-color: #0077cc;
       --secondary-color: #f9f9f9;
@@ -143,21 +143,53 @@
     nav::-webkit-scrollbar-track {
       background: transparent;
     }
-
-    </style>
+  </style>
 </head>
 <body>
 <header>
     <h2>Arduino Academy</h2>
     <nav>
         <a href="/index.html">Home</a>
-        <a href="/tutorials.html">Tutorials</a>
-        <a href="/Projects.html">Projects</a>
-        <a href="/Resources.html">Resources</a>
-        <a href="/">Contact</a>
+        <a href="pages/tutorials.html">Tutorials</a>
+        <a href="pages/Projects.html">Projects</a>
+        <a href="pages/Resources.html">Resources</a>
+        <a href="pages/error.html">Contact</a>
     </nav>
 </header>
-<img src="\images\ekran_ulangan.png" alt="Tutorial GIF" class="gif">
-<h1 style="color:red;text-align: center;"> This section temporary don't exist </h1>
+
+  <div class="hero">
+    <h1>Arduino Tutorials</h1>
+    <p>Start your journey from blinking LEDs to building smart devices</p>
+  </div>
+
+  <section>
+    <div class="cards">
+      <div class="card">
+        <img src="https://www.makerspaces.com/wp-content/uploads/2017/02/LED-Blink-Sketch-optimized-800x551.jpg" alt="Tutorial GIF" class="gif">
+        <h3>Getting Started</h3>
+        <p>Begin your Arduino adventure by learning how to blink an LED and understand your board layout.</p>
+      </div>
+<div class="card">
+        <img src="https://europe1.discourse-cdn.com/arduino/original/4X/2/d/6/2d677d5ed92448f0cacd2eab9b09e164d472ef0e.png" alt="Tutorial GIF" class="gif">
+        <h3>Using Sensors</h3>
+        <p>Explore how to connect and read data from temperature and light sensors.</p>
+      </div>
+<div class="card">
+        <img src="https://europe1.discourse-cdn.com/arduino/original/4X/a/1/c/a1cd30165604eed80e35026bb453dc492bf43166.png" alt="Tutorial GIF" class="gif">
+        <h3>Controlling Motors</h3>
+        <p>Step up to intermediate projects with motor drivers and PWM control to build moving robots.</p>
+      </div>
+<div class="card">
+        <img src="https://iotcircuithub.com/wp-content/uploads/2022/04/lora-iot-project-arduino-esp8266-p10.jpg" alt="Tutorial GIF" class="gif">
+        <h3>Wireless & IoT</h3>
+        <p>Learn how to connect your Arduino to the internet using Wi-Fi modules and send live data to the cloud.</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Arduino Academy | Made with passion in Tashkent 💡</p>
+  </footer>
 </body>
 </html>

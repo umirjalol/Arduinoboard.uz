@@ -139,6 +139,13 @@
       background-color: #ccc;
       border-radius: 4px;
     }
+.resource-card a {
+      display: inline-block;
+      text-decoration: none;
+      color: var(--accent-color);
+      font-weight: bold;
+      padding: 6px 10px;
+    }
 
     nav::-webkit-scrollbar-track {
       background: transparent;
@@ -151,39 +158,52 @@
     <h2>Arduino Academy</h2>
     <nav>
         <a href="/index.html">Home</a>
-        <a href="/tutorials.html">Tutorials</a>
-        <a href="/Projects.html">Projects</a>
-        <a href="/Resources.html">Resources</a>
-        <a href="/error.html">Contact</a>
+        <a href="pages/tutorials.html">Tutorials</a>
+        <a href="pages/Projects.html">Projects</a>
+        <a href="pages/Resources.html">Resources</a>
+        <a href="pages/error.html">Contact</a>
     </nav>
 </header>
 
 <div class="hero">
-    <h1>DIY Arduino Projects</h1>
-
+    <h1>Helpful Resources.</h1>
 </div>
 
 <section>
     <div class="cards">
         <div class="card">
-            <img src="https://content.instructables.com/FUX/O1RW/GICYBAOS/FUXO1RWGICYBAOS.jpg?auto=webp&frame=1&width=2100"
-                 alt="Tutorial GIF" class="gif">
-            <h3>LED Cube Matrix</h3>
-            <p>Create stunning 3D animations with an 8x8x8 LED cube and learn about multiplexing and timing control.</p>
+            <img src="https://blog.creationcrate.com/wp-content/uploads/2018/03/242543_The-Ultimate-Arduino-Tutorial-opt-4_061818.png"
+                 alt="Components GIF" class="gif">
+            <h3>Tutorials</h3>
+            <p>We teach you using arduino training board. You fast learn arduino with pur project</p>
+            <a class="cta" href="files/arduino traing board.pdf" download>Download tutorial</a>
         </div>
         <div class="card">
-            <img src="https://techatronic.com/wp-content/uploads/2020/12/IMG_20210107_090956_578-1024x768.jpg"
-                 alt="Tutorial GIF" class="gif">
-            <h3>Smart Plant Watering System</h3>
-            <p>Use moisture sensors and a relay module to automatically keep your plants hydrated.</p>
+            <img src="https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2022/10/ESP8266-Getting.jpg?resize=828%2C466&quality=100&strip=all&ssl=1" alt="Projects GIF" class="gif">
+            <h3>ESP8266 tutorial</h3>
+            <p>The tutorial help you learn ESP8266 wi-fi development board. Create your IoT projects using ESP8266. </p>
+            <a class="cta" href="files/arduino traing board.pdf">Download tutorial</a>
         </div>
         <div class="card">
-            <img src="https://i0.wp.com/srituhobby.com/wp-content/uploads/2021/06/170.jpg?fit=1280%2C720&ssl=1"
-                 alt="Tutorial GIF" class="gif">
-            <h3>IoT Weather Station</h3>
-            <p>Collect temperature, humidity and barometric data and send it to the cloud using WiFi-enabled boards.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5yv2Bxz-Kqcuyk_ECnbDHVNNuBtkITJDwBw&s"
+                 alt="Components GIF" class="gif">
+            <h3>Component Datasheets</h3>
+            <p>Technical datasheets for popular components including resistors, ICs, and shields.</p>
+            <a class="cta" href="http://docs.arduino.cc/resources/datasheets/A000066-datasheet.pdf">View Datasheets</a>
         </div>
-
+        <div class="card">
+            <img src="\images\librarys.jpg" alt="Components GIF" class="gif">
+            <h3>Library Downloads</h3>
+            <p>Essential Arduino libraries for sensors, displays, motors, and modules (.zip format).</p>
+            <a class="cta" href="#">Download Libraries</a>
+        </div>
+        <div class="card">
+            <img src="https://www.az-delivery.de/cdn/shop/articles/arduino-ide-programmieren-fur-einsteiger-teil-1-886731.jpg?v=1679408931"
+                 alt="Projects GIF" class="gif">
+            <h3>Arduino IDE</h3>
+            <p>Install Arduino IDE and write code for your amazing projects.</p>
+            <a class="cta" href="https://www.arduino.cc/en/software/">Install Arduino IDE</a>
+        </div>
     </div>
 </section>
 
